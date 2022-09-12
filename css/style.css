@@ -1,1 +1,30 @@
+.headerFlex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 75vh;
+  background-image: url(../imgs/_DSC1087\ 10.27.12\ AM.JPG);
+  background-size: cover;
+}
 
+.josephFlex {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 80vh;
+}
+
+.personalPic {
+  background-image: url(../imgs/_DSC1103\ 10.27.11\ AM.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 100%;
+  min-width: 250px;
+  width: 15%;
+  height: 35vh;
+  bottom: 45%;
+  left: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */
