@@ -1,17 +1,18 @@
 .headerFlex {
   display: flex;
-  justify-content: space-around;
   width: 100%;
-  height: 75vh;
+  height: 70vh;
+  justify-content: space-around;
   background-image: url(../imgs/_DSC1087\ 10.27.12\ AM.JPG);
+  min-height: 68vh;
   background-size: cover;
 }
 
 .josephFlex {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  width: 90%;
   height: 80vh;
+  justify-content: space-around;
 }
 
 .personalPic {
@@ -20,11 +21,55 @@
   background-size: cover;
   position: absolute;
   border-radius: 100%;
-  min-width: 250px;
-  width: 15%;
-  height: 35vh;
-  bottom: 45%;
-  left: 10%;
+  border: solid black 2px;
+  min-width: 18%;
+  width: 21%;
+  min-height: 35vh;
+  height: 42vh;
+  bottom: 42%;
+  left: 12%;
+}
+
+.name-title {
+  position: absolute;
+  bottom: 50%;
+  left: 45%;
+  color: white;
+  font-size: 2em;
+  flex-grow: 2;
+}
+.name-title h2 {
+  margin-block-end: 0px;
+  font-size: 2.2em;
+}
+.name-title h4 {
+  margin-block-start: 0.2em;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.bodyFlex {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: space-around;
+}
+
+.leftColumn {
+  display: flex;
+  width: 35%;
+  height: 85vh;
+  flex-direction: column;
+  align-content: space-around;
+  background-color: aqua;
+}
+
+.rightColumn {
+  display: flex;
+  width: 55%;
+  height: 85vh;
+  flex-direction: column;
+  background-color: rgb(180, 180, 180);
 }
 
 /*# sourceMappingURL=style.css.map */
