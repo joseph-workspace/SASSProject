@@ -2,6 +2,7 @@
 $fullWidth: 100%;
 $backCrop: cover;
 $justify: space-around;
+$fontStyle: Verdana, Geneva, Tahoma, sans-serif;
 
 @mixin flex-dimensions($height: 100vh, $width: 100%) {
     display: flex;
@@ -57,13 +58,26 @@ $justify: space-around;
     justify-content: $justify;
 }
 .leftColumn {
-    @include flex-dimensions(85vh, 35%);
+    @include flex-dimensions(85vh, 30%);
     flex-direction: column;
     align-content: space-around;
-    background-color: aqua;
+    background-color: white;
+}
+.personalProfile {
+    p {
+        font-size: 1.2em;
+    }
 }
 .rightColumn {
-    @include flex-dimensions(85vh, 55%);
+    @include flex-dimensions(85vh, 60%);
     flex-direction: column;
     background-color: rgb(180, 180, 180);
+}
+.contactInfo {
+    font-family: $fontStyle;
+    font-size: 1.1em;
+}
+.leftText {
+    font-family: $fontStyle;
+    font-size: 1.1em;
 }

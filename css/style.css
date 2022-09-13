@@ -57,19 +57,33 @@
 
 .leftColumn {
   display: flex;
-  width: 35%;
+  width: 30%;
   height: 85vh;
   flex-direction: column;
   align-content: space-around;
-  background-color: aqua;
+  background-color: white;
+}
+
+.personalProfile p {
+  font-size: 1.2em;
 }
 
 .rightColumn {
   display: flex;
-  width: 55%;
+  width: 60%;
   height: 85vh;
   flex-direction: column;
   background-color: rgb(180, 180, 180);
+}
+
+.contactInfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+}
+
+.leftText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */
