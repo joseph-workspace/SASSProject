@@ -23,7 +23,7 @@ $paddLeft2: 2%;
 .headerFlex {
     @include flex-dimensions(70vh, 100%);
     justify-content: $justify;
-    background-image: url(/SASSProject/imgs/_DSC1087\ 10.27.12\ AM.JPG);
+    background-image: url('../imgs/_DSC1087\ 10.27.12\ AM.JPG');
     min-height: 68vh;
     background-size: $backCrop;
 }
@@ -32,7 +32,7 @@ $paddLeft2: 2%;
     justify-content: $justify;
 }
 .personalPic {
-    background-image: url(/SASSProject/imgs/_DSC1103\ 10.27.11\ AM.JPG);
+    background-image: url('../imgs/_DSC1103\ 10.27.11\ AM.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

@@ -8,7 +8,7 @@
   width: 100%;
   height: 70vh;
   justify-content: space-around;
-  background-image: url(/SASSProject/imgs/_DSC1087\ 10.27.12\ AM.JPG);
+  background-image: url("../imgs/_DSC1087 10.27.12 AM.JPG");
   min-height: 68vh;
   background-size: cover;
 }
@@ -21,7 +21,7 @@
 }
 
 .personalPic {
-  background-image: url(/SASSProject/imgs/_DSC1103\ 10.27.11\ AM.JPG);
+  background-image: url("../imgs/_DSC1103 10.27.11 AM.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
