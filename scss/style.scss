@@ -23,7 +23,7 @@ $paddLeft2: 2%;
 .headerFlex {
     @include flex-dimensions(70vh, 100%);
     justify-content: $justify;
-    background-image: url('../imgs/_DSC1087\ 10.27.12\ AM.JPG');
+    background-image: url('../imgs/buildingSkyline.JPG');
     min-height: 68vh;
     background-size: $backCrop;
 }
