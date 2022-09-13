@@ -3,11 +3,22 @@ $fullWidth: 100%;
 $backCrop: cover;
 $justify: space-around;
 $fontStyle: Verdana, Geneva, Tahoma, sans-serif;
+$paddLeft2: 2%;
 
+@mixin margin-block-SE($marginBS: 0px, $marginBE: 0px) {
+    margin-block-end: $marginBE;
+    margin-block-start: $marginBS;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
 @mixin flex-dimensions($height: 100vh, $width: 100%) {
     display: flex;
     width: $width;
     height: $height;
+}
+%padd-left-2 {
+    padding-left: $paddLeft2;
+    font-family: $fontStyle;
 }
 .headerFlex {
     @include flex-dimensions(70vh, 100%);
@@ -44,7 +55,7 @@ $fontStyle: Verdana, Geneva, Tahoma, sans-serif;
     flex-grow: 2;
     
     h2 {
-        margin-block-end: 0px;
+        @include margin-block-SE(0px, 0px);
         font-size: 2.2em;
     }
     h4 {
@@ -54,14 +65,19 @@ $fontStyle: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 .bodyFlex {
-    @include flex-dimensions(90vh, 100%);
+    @include flex-dimensions(100vh, 100%);
     justify-content: $justify;
 }
 .leftColumn {
-    @include flex-dimensions(85vh, 30%);
+    @include flex-dimensions(100vh, 35%);
     flex-direction: column;
     align-content: space-around;
     background-color: white;
+}
+.education {
+    h3 {
+        @include margin-block-SE(30px, 5px);
+    }
 }
 .personalProfile {
     p {
@@ -69,15 +85,59 @@ $fontStyle: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 .rightColumn {
-    @include flex-dimensions(85vh, 60%);
+    @include flex-dimensions(100vh, 55%);
     flex-direction: column;
-    background-color: rgb(180, 180, 180);
+    color: white;
+    background-color: #93B7BE;
 }
 .contactInfo {
     font-family: $fontStyle;
     font-size: 1.1em;
+    h3 {
+        @include margin-block-SE(30px, 5px);
+    }
 }
 .leftText {
+    @include margin-block-SE(5px, 5px);
     font-family: $fontStyle;
     font-size: 1.1em;
+}
+.skills {
+    @extend %padd-left-2;
+    font-size: 1.5em;
+    div {
+        h3 {
+            @include margin-block-SE(10px, 5px);
+        }
+        ul {
+            font-size: 0.6em;
+            font-family: $fontStyle;
+        }
+    }
+}
+.workExperience {
+    @extend %padd-left-2;
+    h3 {
+        @include margin-block-SE(0px, 0px);
+        font-size: 1.5em;
+    }
+    h4{
+        @include margin-block-SE(5px, 2px);
+        font-size: 1.2em;
+    }
+    h5 {
+        @include margin-block-SE(2px, 6px);
+        font-size: 1.1em;
+    }
+    div {
+        ul {
+            li {
+                font-family: $fontStyle;
+                font-size: 1em;
+            }
+        }
+    }
+}
+body {
+    height: 100vh;
 }
